@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE Library SYSTEM "C:\Users\pas20\IdeaProjects\LabaWeb\src\XML\Book.dtd">
+<Library>
+    <bookshelf number = "0">
+        <book name = "Memoirs of a Geisha">
+            <bookprice price ="500"/>
+            <bookpages pages = "350"/>
+        </book>
+        <book name= "Sherlock Holmes">
+            <bookprice price = "625"/>
+            <bookpages pages = "1150"/>
+        </book>
+        <book name= "The Running Man">
+            <bookprice price = "555"/>
+            <bookpages pages = "237"/>
+        </book>
+    </bookshelf>
+</Library>
+
+

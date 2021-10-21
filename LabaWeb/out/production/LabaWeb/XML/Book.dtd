@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!ELEMENT Library (bookshelf *)>
+<!ELEMENT bookshelf  (book,AmountOfbooks?)>
+<!ATTLIST bookshelf
+        number CDATA #REQUIRED
+        >
+
+<!ELEMENT book (bookprice, bookpages)>
+<!ATTLIST book
+        name CDATA #REQUIRED
+        >
+
+<!ELEMENT bookprice EMPTY>
+<!ATTLIST bookprice
+        price CDATA #REQUIRED
+        >
+
+<!ELEMENT bookpages EMPTY>
+<!ATTLIST bookpages
+        pages CDATA #REQUIRED
+        >
+<!ELEMENT AmountOfbooks (#PCDATA)>
