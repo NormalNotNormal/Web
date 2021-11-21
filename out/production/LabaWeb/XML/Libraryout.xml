@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><Library>
+    <bookcase number="0">
+        <book name="Memoirs of a Geisha">
+            <bookprice price="500"/>
+            <pages quantity="400"/>
+        </book>
+        <book name="Sherlock Holmes">
+            <bookprice price="625"/>
+            <pages quantity="1150"/>
+        </book>
+        <book name="The Running Man">
+            <bookprice price="555"/>
+            <pages quantity="400"/>
+        </book>
+    <NumberOfPages>1950</NumberOfPages></bookcase>
+</Library>
