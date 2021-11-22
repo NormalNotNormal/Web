@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> Web2 </title>
+    <meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+<div class="upperbody">
+    <div class="id_search">
+        <button class="btn" onclick="viewall()">Показать все</button>
+    </div>
+
+</div>
+<table width="70%" border="1px" cellpadding="4px" align="center" id="tab1">
+    <tr>
+        <td width="3%">
+            &nbsp;
+        </td>
+        <td width="13%">
+            Номер
+        </td>
+        <td width="13%">
+            Название книги
+        </td>
+        <td width="13%">
+            Цена книги(P)
+        </td>
+        <td width="13%">
+            Количество страниц
+        </td>
+        <td width="4.5%">
+            &nbsp;
+        </td>
+
+    </tr>
+
+    <div class="adder" id="adder">
+        <input type="text" placeholder="Название книги" id="name1">
+        <input title="Только цифры" type="number" placeholder="Цена книги(P)" id="price1">
+        <input title="Только цифры" type="number" placeholder="Количество страниц" id="pageQuantity1">
+        <button onclick="add()"> Добавить новую запись</button>
+        <button onclick="closeForm()"> Закрыть форму</button>
+
+    </div>
+
+</table>
+<script src="Script.js"></script>
+</body>
+</html>

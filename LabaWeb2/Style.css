@@ -1,0 +1,157 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+textarea:focus, input:focus, button {
+    outline: none;
+}
+input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0;
+    /* <-- Apparently some margin are still there even though it's hidden */
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after {
+    content: '';
+    content: none;
+}
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+input, input[type=text], input[type=number] {
+    border-radius: 10px;
+    height: 20px;
+    padding: 2px 5px;
+    width: auto;
+    border: 1px solid #891f1f;
+    transition: 0.3s border-color;
+}
+
+input:hover, input[type=text]:hover, input[type=number]:hover {
+    border: 1px solid #c61a1a;
+}
+input:focus, input[type=text]:focus, input[type=number]:focus {
+    border: 1px solid #951595;
+}
+label {
+    display: block;
+    margin: 0 0 5px;
+}
+button {
+    background-color: #bdb8a6;
+    color: #130303;
+    cursor: pointer;
+    font-weight: bold;
+    padding: 10px 10px;
+    border: 2px solid #9e7878;
+    border-radius: 4px;
+    transition-duration: 0.4s;
+    box-shadow: 0 0 0;
+}
+button:hover {
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.24), 0 2px 4px 2px rgba(175, 34, 34, 0.19);
+}
+button:active {
+    transition-duration: 0.5ms;
+    background: #bf3d3d;
+}
+.workers-container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-flow: row nowrap;
+}
+.workers-container .content-container {
+    flex-grow: 7;
+    min-width: 750px;
+}
+.workers-container .content-container table {
+    border: 1px solid #176974;
+    table-layout: fixed;
+    width: 100%;
+    margin-bottom: 20px;
+}
+.workers-container .content-container table th {
+    font-weight: bold;
+    padding: 5px;
+    background: #a17a14;
+    border: 1px solid #ac8282;
+}
+.workers-container .content-container table tbody tr.hidden {
+    display: none;
+}
+.workers-container .content-container table tbody tr td {
+    padding: 5px 10px;
+    border: 1px solid #a30a82;
+    text-align: left;
+    width: 100%;
+}
+.workers-container .content-container table tbody tr td input[type=checkbox] {
+    width: 100%;
+}
+.workers-container .content-container table tbody tr td button.delete-worker {
+    font-weight: normal;
+    padding: 2px 4px;
+}
+.workers-container .content-container table tbody tr:nth-child(odd) {
+    background: #9e4a4a;
+}
+.workers-container .content-container table tbody tr:nth-child(even) {
+    background: #51158d;
+}
+.workers-container .content-container table tbody tr.selected {
+    background: #839980;
+}
+.workers-container .right-menu-container {
+    flex-grow: 3;
+    min-width: 300px;
+    background: #a59e2d;
+    border-left: 1px solid #82896f;
+}
+.workers-container .right-menu-container .item {
+    padding: 20px 0;
+    margin: 0 10px;
+    border-bottom: 1px solid #2e6a34;
+}
+.workers-container .right-menu-container .item:first-child {
+    margin-top: 10px;
+}
+.workers-container .right-menu-container .item:last-child {
+    margin-bottom: 10px;
+    border-bottom: none;
+}
+.workers-container .right-menu-container .item.hidden {
+    display: none;
+}
+.workers-container .right-menu-container .item h1 {
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.workers-container .right-menu-container .item .actions {
+    margin-top: 20px;
+    text-align: right;
+}
